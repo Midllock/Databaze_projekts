@@ -1,9 +1,17 @@
--- Selekce všech vlastníků z tabulky owners seřazených vzestupně podle příjmení.
+-- Active: 1747390466446@@127.0.0.1@3306
 
--- Selekce všech všech vlastníků z tabulky owners, kteří se narodili po roce 1980.
+SELECT * FROM owners
+ORDER BY last_name ASC;
 
--- Selekce všech vlastníků z tabulky owners, kteří pocházejí z města, jehož název začíná písmenem P
 
--- Selekce počtu všech jedinečných modelů (DISTINCT) z tabulky models.
+SELECT * FROM owners
+WHERE birthday > '1980-12-31';
 
--- Selekce všech VIN kódů (projekce) z tabulky vehicles.
+
+SELECT * FROM owners
+WHERE city LIKE 'P%';
+
+SELECT COUNT(DISTINCT model_name) AS unique_model_count
+FROM models;
+
+SELECT vin_code FROM cars;

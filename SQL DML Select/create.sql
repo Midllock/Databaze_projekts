@@ -1,3 +1,4 @@
+-- Active: 1747390466446@@127.0.0.1@3306
 CREATE SCHEMA IF NOT EXISTS vehicles;
 USE vehicles;
 
